@@ -56,10 +56,7 @@ const uploadFile = async (req, res) => {
   }
 };
 
-/**
- * Get file by ID
- * @route GET /files/:id
- */
+
 const getFileById = async (req, res) => {
   try {
     const fileId = req.params.id;
@@ -114,10 +111,6 @@ const getFileById = async (req, res) => {
   }
 };
 
-/**
- * Get all files for the authenticated user
- * @route GET /files
- */
 const getAllFiles = async (req, res) => {
   try {
     const userId = req.user.id;
